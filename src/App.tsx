@@ -7,6 +7,7 @@ const Link = (props: JSX.IntrinsicElements['a']) => (
 
 export default function App() {
   return (
+    <>
     <div className="mx-auto my-8 mt-10 w-8/12 rounded border border-gray-200 p-4 shadow-md dark:border-neutral-600 dark:bg-neutral-800 dark:shadow-none">
       <h1 className="mb-4 text-4xl">Welcome</h1>
       <p className="my-4">
@@ -26,5 +27,16 @@ export default function App() {
         for live updates.
       </p>
     </div>
+    <div className="card w-96 bg-base-100 shadow-xl">
+      <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+      <div className="card-body">
+        <h2 className="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div className="card-actions justify-end">
+        <button className="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</>
   );
 }
