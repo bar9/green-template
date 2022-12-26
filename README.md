@@ -1,8 +1,8 @@
-# Starter Kit for Vite, React, TypeScript, Tailwind and Node.js ESM
+# Green Template: react/daisy/rocket
 
-_Minimal, sensible defaults, fast._
-
-Read [the blog post about this template](https://cpojer.net/posts/fastest-frontend-tooling-in-2022).
+SPA template based on [vite-ts-react-tailwind-template](https://github.com/cpojer/vite-ts-react-tailwind-template) 🙏, 
+enhanced with storybook for component driven development, daisyUI for batteries included flexible component framwork,
+and rust rocket for the API
 
 ## Technologies
 
@@ -10,19 +10,22 @@ Read [the blog post about this template](https://cpojer.net/posts/fastest-fronte
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org)
 - [Tailwind](https://tailwindcss.com/)
-- [pnpm](https://pnpm.io/ja/) (_Optional_)
+- [DaisyUI](https://daisyui.com)
+- [Storybook](https://storybook.com)
+- [Rocket](https://rocket.rs)
 
 ![screenshot of `App.tsx`](./screenshot.png)
 
 ## Setup
 
-- Press the "Use this template" on the top of this repository's GitHub page.
-- Run `pnpm install` (or `npm install` if you don't use `pnpm`).
-- `pnpm dev` for development.
-- Use `pnpm test` to run tests.
-- `pnpm build` for production builds.
-
-_Note: You can install `pnpm` via `homebrew` on macOS: `brew install pnpm`._
+~~- Press the "Use this template" on the top of this repository's GitHub page.~~
+- [ ] set up as template
+- Run `npm install`. Contrary to the upstream template, I can not suggest pnpm yet because of problems with storybook. 
+- `npm run dev` for development.
+- `npm run storybook` for component-based development in storybook
+- Use `npm run test` to run tests.
+~~- `npm run build` for production builds.~~ 
+- [ ] set up prod build
 
 ## Protips for the fastest Developer Experience
 
@@ -49,3 +52,10 @@ Use this to restart your scripts instantly when a file changes:
 
 console.log('This processes instantly restarts when a file changes.');
 ```
+
+## TODO
+- [x] update readme
+- [x] replace examples with daisyUI
+- [x] github repo
+- [ ] work through Christoph Nakazawas blog post again
+- [ ] add rust API

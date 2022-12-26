@@ -1,5 +1,4 @@
 import React from 'react';
-import './button.css';
 
 interface ButtonProps {
   /**
@@ -30,16 +29,19 @@ interface ButtonProps {
 export const Button = ({
   primary = false,
   size = 'medium',
-  backgroundColor,
   label,
   ...props
 }: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const mode = primary ? 'btn-primary' : 'btn-secondary';
+  const sz = {
+    'small': 'sm',
+    'medium': 'md',
+    'large': 'lg'
+  }[size];
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className={['btn', `btn-${size}`, mode].join(' ')}
       {...props}
     >
       {label}
