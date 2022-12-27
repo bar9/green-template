@@ -1,8 +1,8 @@
-# Green Template: react/daisy/rocket
+# Green Template: react/daisy/axum
 
 SPA template based on [vite-ts-react-tailwind-template](https://github.com/cpojer/vite-ts-react-tailwind-template) 🙏, 
 enhanced with storybook for component driven development, daisyUI for batteries included flexible component framwork,
-and rust rocket for the API
+and rust axum for the API
 
 ## Technologies
 
@@ -12,7 +12,7 @@ and rust rocket for the API
 - [Tailwind](https://tailwindcss.com/)
 - [DaisyUI](https://daisyui.com)
 - [Storybook](https://storybook.com)
-- [Rocket](https://rocket.rs)
+- [Axum](https://github.com/tokio-rs/axum)
 
 ![screenshot of `App.tsx`](./screenshot.png)
 
