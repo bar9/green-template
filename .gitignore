@@ -4,3 +4,8 @@ coverage/
 dist/
 tsconfig.tsbuildinfo
 public/
+
+
+# Added by cargo
+
+/target
